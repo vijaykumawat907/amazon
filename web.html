@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+
+<html lang="en"><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/content/location/location.js" id="nimlmejbmnecnaghgmbahmbaddhjbecg"></script><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/libs/extend-native-history-api.js"></script><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./vijay_files/boxicons.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #f3f3f3;
+        }
+        .info{
+            background-color: rgb(6,31,100);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .contact-info{
+            display: flex;
+            gap: 20px;
+        }
+        .contact-info i{
+            padding-right: 10px;
+        }
+        .icon{
+            display: flex;
+            gap: 10px;
+        }
+        .header{
+            background-color: white;
+            display: flex;
+            
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        a{
+            color: black;
+            font-size: 18px;
+            padding: 25px;
+            text-decoration: none;
+            display: block;
+        }
+        .header img{
+            width: 90px;
+        }
+        .pics img{
+            width: 100%;
+        }
+        .aboutowner{
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 15px;
+            padding: 16px 32px;
+            margin-top: 6%;
+        }
+        .aboutowner img{
+            width: 100%;
+        }
+        .image{
+            width: 50%;
+        }
+        .about-info{
+            width: 50%;
+            font-size: 19px;
+        }
+        button{
+            padding: 12px 30px;
+            margin-top: 10px;
+            border: none;
+            background-image: linear-gradient(to bottom right,rgb(173,173,173),rgb(0,22,118));
+            transition: all 0.3s ease;
+            color: white;
+            display: flex;
+            align-items: center;
+           gap: 4px;
+           font-size: 15px;
+        }
+        button:hover{
+            padding: 12px 40px;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+            margin-top: 50px;
+        }
+        .features-grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            margin: auto;
+            height: 300px;
+            
+        }
+        .grid-items{
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+            transition: all 0.3s ease;
+        }
+        .grid-items img{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .grid-items h3{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        .grid-items p{
+            font-size: 18px;
+            color: grey;
+        }
+        .grid-items:hover{
+            transform: translateY(-10px);
+        }
+        .courses{
+            margin: auto;
+            width: 100%;
+            border: 0.5px solid lightgray;
+            margin-top: 70px;
+            background-color: #f0f4fb;
+            padding-bottom: 70px;
+        }
+        .job{
+            padding: 50px 20px;
+            margin: auto;
+            text-align: center;
+        }
+        .job p{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .course-type{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            margin: auto;
+            width: 1200px;
+        }
+        .course-grid{
+            padding: 20px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .course-grid img{
+            width: 150px;
+        }
+        .course-grid:hover{
+            transform: translateY(-10px);
+        }
+        .partners{
+            width: 100%;
+            margin: auto;
+        }
+        .part2{
+            padding: 50px 20px;
+            margin: auto;
+            text-align: center;
+        }
+        .part1{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 100px;
+            margin: auto;
+            width: 1200px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .part1 img{
+            width: 150px;
+        }
+        .part3{
+            padding: 50px 20px;
+            margin: auto;
+            text-align: center;
+        }
+        .guidance{
+            display: flex;
+            width: 100%; 
+           align-items: center;
+           padding: 50px;
+           gap: 20px;
+        }
+        .pic img{
+            width: 400px;
+        }
+        
+       .part4{
+            text-align: right;
+       }
+    </style>
+<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;//linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;]" src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/executers/vi-tr.js"></script></head>
+<body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRkaGpiZWNnIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjE0Iiwic2NvcmUiOjIwMDE0fV0=" data-new-gr-c-s-check-loaded="14.1071.0" data-gr-ext-installed="">
+    <div class="info" bis_skin_checked="1">
+        <div class="contact-info" bis_skin_checked="1">
+            <div class="contact" bis_skin_checked="1">+91 78498 08031</div>
+            <div class="email" bis_skin_checked="1">contact@digitalcomputerclasses.com</div>
+        </div>
+        <div class="icon" bis_skin_checked="1">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin-square"></i>
+            <i class="bx bxl-pinterest"></i>
+            <i class="bx bxl-tumblr"></i>
+        </div>
+    </div>
+    <div class="header" bis_skin_checked="1">
+        <ul>
+            <li><img src="./vijay_files/DC-Logo.png"></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Courses</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Services</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Portfolio</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Company</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Blog</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Pay Now</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Contact us</a></li>
+            <li><a href="http://127.0.0.1:5500/dcc.html">Admission form</a></li>
+        </ul>
+    </div>
+    <div class="pics" bis_skin_checked="1">
+        <img src="./vijay_files/Digital-Computer-Classes-1.jpg">
+    </div>
+    <div class="aboutowner" bis_skin_checked="1">
+        <div class="image" bis_skin_checked="1">
+            <img src="./vijay_files/young-entrepreneur-of-the-year-krishna-choudhary-2048x1676.jpg">
+        </div>
+        <div class="about-info" bis_skin_checked="1">
+            <h3>WELCOME TO</h3>
+            <h2>digital computer classes</h2>
+            <p>Registered in India, Digital Computer Classes was started in 2018, under the guidance of Mr. Krishna Choudhary who is the Founder and Managing Director of Digital Computer Classes, Digital Marketing Expert, an Influencer,  Digital Marketing Coach, as well as a Strategist and Consultant. Recently Mr. Krishna Choudhary has been awarded “Best Young Entrepreneur of The Year 2022 &amp; 2023” by Bollywood Actress Ameesha Patel in 2022 &amp; Madhuri Dixit in 2023. Digital Computer Classes originally opened its flagship location in Gopalpura, Jaipur. Following the success of its Gopalpura location, Digital Computer Classes has expanded its services and opened a branch in Pratap Nagar, Malviya Nagar, MI Road, Jhotwara, Adarsh Nagar and many more coming soon in Jaipur.
+            <br>We have a dedicated team of high-quality professionals who constantly work and train in different courses like Digital Marketing, Programming Languages, Banking &amp; Finance, MS Office, Graphic Designing, Web Designing, Web Development, Artificial Intelligence, Robotics, Machine Learning, bio-metrics, education, banking, media monitoring, retail, shipping, logistics etc. Digital Computer Classes is expanding rapidly to fulfil the need worldwide.</p>
+            <button>Read more<i class="bx bx-right-arrow-alt"></i></button>  
+            
+        </div>
+    </div>
+    <div class="container">
+       <div class="features-grid">
+        <div class="grid-items">
+           <img src="https://img.icons8.com/?size=48&id=18529&format=png" alt="">
+            <h3>Learn the Latest Skills</h3>
+            <p>Our Belief, Mission, Vision and Values have been the driving force that have propelled us to the leadership position.</p>
+        </div>
+        <div class="grid-items">
+            <img src="https://img.icons8.com/?size=80&id=sbrT1rdk3NQ4&format=png" alt="">
+            <h3>Get Ready for a Career</h3>
+            <p>We are an institution that believes information can help you see things from several perspectives.</p>
+        </div>
+        <div class="grid-items">
+           <img src="https://img.icons8.com/?size=80&id=lSn2fAFayZaR&format=png" alt="">
+            <h3>Earn a Certificate or Degree</h3>
+            <p>Digital Computer Classes provides training experience that facilitates acquisition of knowledge &amp; skill.</p>
+        </div>
+        <div class="grid-items">
+            img
+            <h3>Excellent Service by Best Trainers</h3>
+            <p>Every year we create around 5000 new job opportunities across the country.</p>
+        </div>
+       </div>
+    </div>
+    <div class="courses" bis_skin_checked="1">
+    <div class="job" bis_skin_checked="1">
+        <h2>Popular Job Oriented Courses</h2>
+        <p>With 100% Placement Guarantee</p>
+    </div>
+    <div class="course-type" bis_skin_checked="1">
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Digital-Marketing.png">
+            <h3>Digital Marketing</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Microsoft-Courses.png">
+            <h3>Microsoft Courses</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Internship-Courses.png">
+            <h3>Student Courses</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Programming-Languages.png">
+            <h3>Programming Languages</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Summer-Internship.png">
+            <h3>Summer Internship</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Professional-Courses.png">
+            <h3>Professional Courses</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/graphic-design.png">
+            <h3>Graphic Designing &amp; Animation</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Web-Design-Development.png">
+            <h3>Web Designing</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Web-Development.png">
+            <h3>Web Development</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Spoken-Engish.png">
+            <h3>Spoken Engish</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Banking-Accounts.png">
+            <h3>Banking &amp; Accounts</h3>
+        </div>
+        <div class="course-grid" bis_skin_checked="1">
+            <img src="./vijay_files/Data-Science.png">
+            <h3>Data Science &amp; Analytics</h3>
+        </div>
+    </div>
+   </div> 5
+   <div class="partners" bis_skin_checked="1">
+    <div class="part2" bis_skin_checked="1">
+        <h2>Training Partners</h2>
+    </div>
+    <div class="part1" bis_skin_checked="1">
+    <img src="./vijay_files/adobe-logo.jpg">
+    <img src="./vijay_files/apple-logo.png">
+    <img src="./vijay_files/autodesk-logo.png">
+    <img src="./vijay_files/tally-logo.jpg" style="width:100px;">
+    <img src="./vijay_files/microsoft-logo.jpg" style="width:100px;">
+    </div>
+    <div class="part3" bis_skin_checked="1">
+        <h2>Free Career Counselling &amp; Guidance From Us For Your Job</h2>
+        <p>We work with you, not for you. Although we have a great resources.</p>
+    </div>
+    <div class="guidance" bis_skin_checked="1">
+        <div class="guidance1" bis_skin_checked="1">
+    <div class="part4" bis_skin_checked="1">
+        <img width="70" height="70" src="./vijay_files/summer--v1.png" alt="summer--v1">
+        <h3>Live Projects</h3>
+        <p>All courses are as per industry needs and with projects, which make Digital Computers approach job oriented.</p>
+        </div>
+        <div class="part4" bis_skin_checked="1">
+        <img width="48" height="48" src="./vijay_files/pencil.png" alt="pencil">
+        <h3>Real-Time Experience</h3>
+        <p>Contents are based upon the latest trends in IT Education industry.</p>
+        </div>
+    </div>
+        <div class="pic" bis_skin_checked="1">
+        <div class="part4" bis_skin_checked="1">
+        <img src="./vijay_files/why-us-img.png">
+    </div>
+    </div>
+    <div class="guidance2" bis_skin_checked="1">
+    <div class="part5" bis_skin_checked="1">                          
+        <img width="48" height="48" src="./vijay_files/conference-call.png" alt="conference-call">
+        <h3>Ready for Job</h3>
+        <p>We are an institution that provides knowledge beyond books, knowledge beyond boundaries.</p>
+    </div>
+    <div class="part5" bis_skin_checked="1">
+        <img width="48" height="48" src="./vijay_files/globe.png" alt="globe">
+        <h3>Ready to Earn</h3>
+        <p>We work with you, not for us. Although we have a great Environment.</p>
+    </div>
+    </div>
+    </div>
+   </div>

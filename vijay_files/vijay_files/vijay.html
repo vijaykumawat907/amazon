@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/ari.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./vijay_files/boxicons.min.css" rel="stylesheet">
+<style>
+    .working{
+        display: flex;
+        margin: 100px;
+    }
+    .get{
+        height: 500px;
+        width: 700px;
+        
+    }
+    .submit input{
+        height: 40px;
+        width: 250px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin: auto;
+    }
+    .submit1{
+        position: absolute;
+        right: 10px;
+    }
+    .submit3{
+        position: absolute;
+        right: 10px;
+    }
+    .submit5 input{
+        height: 80px;
+        width: 694px;
+    }
+
+    .submit5{
+        position: absolute;
+        right: 10px;
+    }
+</style></head>
+
+<body>
+    <div class="working">
+        <div class="get">
+            <h4><i class="bx bxs-circle"></i>GET IN TOUCH<i class="bx bxs-circle"></i></h4>
+            <br>
+            <h1>Get Free Quote?</h1>
+            <br>
+            <p>Thank you for your interest in Digital Computer Classes. Please submit the form below to the best of your abilities, and our sales team would contact you shortly.</p>
+        </div>
+        <div class="submit">
+        <div class="submit1">
+           <label>Name</label>
+           <input type="text" placeholder="Name">
+        </div>
+        <div class="submit2">
+            <label>Name</label>
+            <input type="text" placeholder="Name">
+         </div>
+         <div class="submit3">
+            <label>Name</label>
+            <input type="text" placeholder="Name">
+         </div>
+         <div class="submit4">
+            <label>Name</label>
+            <input type="text" placeholder="Name">
+         </div>
+         <div class="submit5">
+            <label>Name</label>
+            <input type="text" placeholder="Name">
+         </div>
+        </div>
+       </div>
+        
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

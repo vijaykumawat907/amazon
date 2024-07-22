@@ -1,0 +1,10 @@
+import pandas as pd 
+file = pd.read_csv('a.csv')
+print(file.to_string())
+import numpy as num
+import matplotlib.pyplot as plt
+plt.plot(file['roll number'],file['cw1,cw2,ese'])
+plt.xlabel('roll no.')
+plt.ylabel('ese')
+plt.title('csv file')
+plt.show()
